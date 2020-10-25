@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 1px;
+}
+
+.container {
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "selector-pane selector-pane display-pane display-pane"
+    "footer footer footer footer";
+  grid-gap: 20px;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+.site-name {
+  flex: 1;
+  color: #124e30;
+  margin-top: 20px;
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.nav-bar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #9eacc4;
+}
+
+.nav-bar ul li a:hover {
+  color: #edf2f4;
+}
+
+#display-pane {
+  border-radius: 50px;
+  border: 5px solid #077187;
+  grid-area: display-pane;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  grid-area: footer;
+  color: #124e30;
+}
+
+#copy-info {
+  margin-top: 20px;
+  font-size: 5;
+}
+
+#selector-pane {
+  border-radius: 50px;
+  border: 5px solid #077187;
+  grid-area: selector-pane;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  height: 60px;
+}
+
+.predict-form {
+  margin-top: 5%;
+  margin-left: 25%;
+  align-content: center;
+}
+
+#prediction-list {
+  text-align: center;
+}
+
+#predict-btn {
+  margin-left: 25%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crop Selector</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" 
+        rel="stylesheet"/>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <div class="container">
+        <nav>
+            <div>
+                <img class="icon", src="planticon.svg", preserveAspectRatio="none">
+            </div>
+            <div class="site-name">
+                <h3>Crop Selector</h3>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="https://github.com/parryadig/Crop-Selector-ANN" target="_blank">Source</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="display-pane">
+
+            <div class="title">
+                <h1>PREDICTION</h1>
+            </div>
+
+            <div id="prediction-list">
+                <b>Enter crop attributes & press predict.</b>
+            </div>
+
+        </div>
+        <div id="selector-pane">
+
+            <div class="title">
+                <h1>ATTRIBUTES</h1>
+            </div>
+
+            <div class="predict-form">
+                <form id="pf", action="#">
+                    <b> Temperature : <input type="number", id="a", placeholder="Enter temperature"> <br><br>
+                    Humidity : <input type="number", id="b", placeholder="Enter humidity"> <br><br>
+                    pH : <input type="number", id="c", placeholder="Enter pH"> <br><br>
+                    Rainfall : <input type="number", id="d", placeholder="Enter rainfall"> <br><br></b>
+                    <input id="predict-btn", type="button", value="Predict">
+                </form>
+            </div>
+
+        </div>
+        <footer>
+            <div>
+                <p id="copy-info"><small>Copyright Ⓒ Paurakh Paudyal 2020</small></p>
+            </div>
+        </footer>
+    </div>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.6.0/dist/tf.min.js"></script>
+        <script src="predict.js"></script>
+    </body>
+    
+
+</html>

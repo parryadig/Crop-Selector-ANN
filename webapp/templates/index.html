@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <body bgcolor=#DDD8C4>
-        <center>
-            <h1>CROP SELECTOR</h1>
+    <head>
+        <title>Crop Selector</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" 
+        rel="stylesheet"/>
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
 
-            <form method="POST", action="{{url_for('predicting')}}">
-                <b> Temperature : <input type="text", name="a", placeholder="Enter temp"> <br><br>
-                Humidity : <input type="text", name="b", placeholder="Enter humidity"> <br><br>
-                pH : <input type="text", name="c", placeholder="Enter pH"> <br><br>
-                Rainfall : <input type="text", name="d", placeholder="Enter rainfall"> <br><br></b>
-                <input type="submit", value="Predict">
-            </form>
-        </center>
+    <div class="container">
+        <nav>
+            <div class="site-name">
+                <h3>Crop Selector</h3>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#Selector">Selector</a></li>
+                    <li><a href="#Data">Data</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div  class="title">
+                <h1>Display Pane</h1>
+            </div>
+
+        </main>
+        <div id="selector-pane">
+
+            <div  class="title">
+                <h1>CROP SELECTOR</h1>
+            </div>
+
+            <div class="predict-form">
+                <form method="POST", action="{{url_for('predicting')}}">
+                    <b> Temperature : <input type="text", name="a", placeholder="Enter temp"> <br><br>
+                    Humidity : <input type="text", name="b", placeholder="Enter humidity"> <br><br>
+                    pH : <input type="text", name="c", placeholder="Enter pH"> <br><br>
+                    Rainfall : <input type="text", name="d", placeholder="Enter rainfall"> <br><br></b>
+                    <input class="abtn", type="submit", value="Predict">
+                </form>
+            </div>
+
+        </div>
+        <footer>Footer</footer>
+    </div>
+
+
+    <body>
+        
+            
+
 
     </body>
 
